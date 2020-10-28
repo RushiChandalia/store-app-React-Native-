@@ -4,7 +4,7 @@ import {
   SafeAreaView,
   View,
   TouchableHighlight,
-  TouchableWithoutFeedback,
+  TouchableOpacity,
   StyleSheet,
 } from "react-native";
 
@@ -30,9 +30,9 @@ export default function App() {
             LOGIN
           </Text>
         </TouchableHighlight>
-        <TouchableWithoutFeedback onPress={signup}>
+        <TouchableOpacity onPress={signup}>
           <Text style={styles.signup_button}>Dont Have An Account?</Text>
-        </TouchableWithoutFeedback>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
