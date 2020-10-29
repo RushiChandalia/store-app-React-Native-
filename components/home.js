@@ -26,7 +26,13 @@ export default function App() {
       </View>
       <View style={styles.login_container}>
         <TouchableHighlight onPress={login} style={styles.login_button}>
-          <Text style={{ color: "white", fontWeight: "bold", fontSize: 15 }}>
+          <Text
+            style={{
+              color: "white",
+              fontFamily: "montserrat_bold",
+              fontSize: 15,
+            }}
+          >
             LOGIN
           </Text>
         </TouchableHighlight>
@@ -60,16 +66,18 @@ const styles = StyleSheet.create({
   header1: {
     color: "white",
     fontSize: 45,
-    fontWeight: "bold",
+
     letterSpacing: 2,
+    fontFamily: "montserrat_bold",
   },
   header2: {
     color: "white",
     fontSize: 15,
-    fontWeight: "700",
+
     letterSpacing: 2,
     position: "relative",
     top: 15,
+    fontFamily: "montserrat_bold",
   },
   login_container: {
     position: "relative",
@@ -80,7 +88,7 @@ const styles = StyleSheet.create({
   login_button: {
     fontSize: 15,
     textTransform: "uppercase",
-    fontWeight: "bold",
+
     width: 110,
     height: 45,
     backgroundColor: "#16056B",
@@ -93,8 +101,9 @@ const styles = StyleSheet.create({
   signup_button: {
     fontSize: 15,
     textTransform: "uppercase",
-    fontWeight: "600",
+
     marginTop: 10,
     letterSpacing: 1,
+    fontFamily: "montserrat_regular",
   },
 });
